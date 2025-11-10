@@ -1,0 +1,199 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #080D0D;
+    color: #F3DAAA;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #648285;
+    padding-bottom: 10px;
+}
+
+a {
+    color: #A3C4C2;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.container, .painel-container {
+    background-color: #1a2020;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #648285;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+}
+
+.painel-container {
+    max-width: 900px;
+    margin: 20px;
+    text-align: left;
+}
+
+.container {
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #B4A68E;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #080D0D;
+    border: 1px solid #648285;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #F3DAAA;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #A3C4C2;
+    outline: none;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button, input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #648285;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #A3C4C2;
+    color: #080D0D;
+}
+
+.mensagem-sucesso {
+    color: #d4edda;
+    background-color: #155724;
+    border: 1px solid #28a745;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.mensagem-erro {
+    color: #f8d7da;
+    background-color: #721c24;
+    border: 1px solid #dc3545;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.painel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 25px;
+}
+
+.painel-header p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #B4A68E;
+}
+
+.painel-header a {
+    background-color: transparent;
+    border: 1px solid #B4A68E;
+    color: #B4A68E;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.painel-header a:hover {
+    background-color: #B4A68E;
+    color: #080D0D;
+}
+
+.tabela-tarefas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-tarefas th, .tabela-tarefas td {
+    padding: 12px 15px;
+    border: 1px solid #648285;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tabela-tarefas thead th {
+    background-color: #080D0D;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.tabela-tarefas tbody tr {
+    background-color: #1a2020;
+    transition: background-color 0.2s ease;
+}
+
+.tabela-tarefas tbody tr:hover {
+    background-color: #2a3131;
+}
+
+.tabela-tarefas .acoes a {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.tabela-tarefas .acoes .editar {
+    color: #A3C4C2;
+}
+.tabela-tarefas .acoes .editar:hover {
+    color: #FFFFFF;
+}
+
+.tabela-tarefas .acoes .excluir {
+    color: #B4A68E;
+}
+.tabela-tarefas .acoes .excluir:hover {
+    color: #F3DAAA;
+}
